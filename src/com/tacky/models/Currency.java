@@ -1,5 +1,7 @@
 package com.tacky.models;
 
+import java.util.Date;
+
 public class Currency {
 
     String baseCode;
@@ -7,6 +9,7 @@ public class Currency {
     Double amount;
     Double convertedAmount;
     Double rate;
+    Date createdOn = new Date();
 
     public Currency(String baseCode, String targetCode, Double amount, Double convertedAmount, Double rate) {
         this.baseCode = baseCode;
@@ -14,6 +17,7 @@ public class Currency {
         this.amount = amount;
         this.convertedAmount = convertedAmount;
         this.rate = rate;
+        this.createdOn = new Date();
     }
 
     public Currency(CurrencyOmdb tempCurrency, double amount) {
@@ -67,5 +71,9 @@ public class Currency {
     @Override
     public String toString() {
         return "The value " + this.getAmount() + " [" + this.getBaseCode() + "] is equal to: " + this.getConvertedAmount() + " [" + this.getTargetCode() + "]\n";
+    }
+
+    public void print() {
+        System.out.println(this);
     }
 }

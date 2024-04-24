@@ -7,6 +7,9 @@ import com.google.gson.GsonBuilder;
 import com.tacky.models.Currency;
 import com.tacky.models.CurrencyOmdb;
 
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.http.HttpResponse;
 
 public class Converter {
