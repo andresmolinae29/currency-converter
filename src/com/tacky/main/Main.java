@@ -65,8 +65,6 @@ public class Main {
             }
 
             Client client;
-            Converter converter;
-            Currency currency;
 
             switch (option) {
                 case 1:
