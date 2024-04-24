@@ -1,9 +1,7 @@
 package com.tacky.main;
 
 import com.tacky.apicurrency.Client;
-import com.tacky.apicurrency.Converter;
 import com.tacky.models.Currencies;
-import com.tacky.models.Currency;
 
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -65,8 +63,6 @@ public class Main {
             }
 
             Client client;
-            Converter converter;
-            Currency currency;
 
             switch (option) {
                 case 1:
